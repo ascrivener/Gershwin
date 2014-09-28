@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0B46C219D74A9B00486E01 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0B46C119D74A9B00486E01 /* AudioUnit.framework */; };
+		6C5D84A819D73E4B00E56502 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5D84A719D73E4B00E56502 /* Accelerate.framework */; };
+		6CED009C19D8C4E200690E65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED008D19D8C4E200690E65 /* AppDelegate.m */; };
+		6CED009D19D8C4E200690E65 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6CED008E19D8C4E200690E65 /* Credits.rtf */; };
+		6CED009E19D8C4E200690E65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CED009019D8C4E200690E65 /* InfoPlist.strings */; };
+		6CED009F19D8C4E200690E65 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CED009219D8C4E200690E65 /* MainMenu.xib */; };
+		6CED00A019D8C4E200690E65 /* Gershwin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED009619D8C4E200690E65 /* Gershwin.m */; };
+		6CED00A119D8C4E200690E65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED009719D8C4E200690E65 /* main.m */; };
+		6CED00A419D8C4E200690E65 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED009B19D8C4E200690E65 /* ToneGenerator.m */; };
+		6CED00A819D8C57900690E65 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CED00A719D8C57900690E65 /* LeapObjectiveC.mm */; };
+		6CED00AC19D8C5A500690E65 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CED00AB19D8C5A500690E65 /* libLeap.dylib */; };
+		6CED00AD19D8C5CE00690E65 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6CED00AB19D8C5A500690E65 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B599FCC81656F5020092AFFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B599FCC71656F5020092AFFD /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73BF4B1216F7B3CB00DE8B54 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				6CED00AD19D8C5CE00690E65 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C0B46C119D74A9B00486E01 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		6C5D84A719D73E4B00E56502 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6C5D84A919D73E5E00E56502 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6C5D84AB19D73E9500E56502 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6CED008C19D8C4E200690E65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CED008D19D8C4E200690E65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CED008F19D8C4E200690E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6CED009119D8C4E200690E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CED009319D8C4E200690E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6CED009419D8C4E200690E65 /* Gershwin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gershwin-Prefix.pch"; sourceTree = "<group>"; };
+		6CED009519D8C4E200690E65 /* Gershwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gershwin.h; sourceTree = "<group>"; };
+		6CED009619D8C4E200690E65 /* Gershwin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gershwin.m; sourceTree = "<group>"; };
+		6CED009719D8C4E200690E65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CED009819D8C4E200690E65 /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
+		6CED009A19D8C4E200690E65 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		6CED009B19D8C4E200690E65 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		6CED00A619D8C57900690E65 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		6CED00A719D8C57900690E65 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		6CED00A919D8C58500690E65 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		6CED00AA19D8C59000690E65 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		6CED00AB19D8C5A500690E65 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		B599FCC31656F5020092AFFD /* Gershwin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gershwin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B599FCC71656F5020092AFFD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B599FCCA1656F5020092AFFD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B599FCCB1656F5020092AFFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B599FCCC1656F5020092AFFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B599FCC01656F5020092AFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED00AC19D8C5A500690E65 /* libLeap.dylib in Frameworks */,
+				6C0B46C219D74A9B00486E01 /* AudioUnit.framework in Frameworks */,
+				6C5D84A819D73E4B00E56502 /* Accelerate.framework in Frameworks */,
+				B599FCC81656F5020092AFFD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CED008B19D8C4E200690E65 /* Gershwin */ = {
+			isa = PBXGroup;
+			children = (
+				6CED008C19D8C4E200690E65 /* AppDelegate.h */,
+				6CED008D19D8C4E200690E65 /* AppDelegate.m */,
+				6CED009519D8C4E200690E65 /* Gershwin.h */,
+				6CED009619D8C4E200690E65 /* Gershwin.m */,
+				6CED009A19D8C4E200690E65 /* ToneGenerator.h */,
+				6CED009B19D8C4E200690E65 /* ToneGenerator.m */,
+				6CED00A919D8C58500690E65 /* Leap.h */,
+				6CED00AA19D8C59000690E65 /* LeapMath.h */,
+				6CED00A619D8C57900690E65 /* LeapObjectiveC.h */,
+				6CED00A719D8C57900690E65 /* LeapObjectiveC.mm */,
+				6CED00A519D8C4F100690E65 /* Supporting Files */,
+			);
+			path = Gershwin;
+			sourceTree = "<group>";
+		};
+		6CED00A519D8C4F100690E65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CED008E19D8C4E200690E65 /* Credits.rtf */,
+				6CED009019D8C4E200690E65 /* InfoPlist.strings */,
+				6CED009219D8C4E200690E65 /* MainMenu.xib */,
+				6CED009419D8C4E200690E65 /* Gershwin-Prefix.pch */,
+				6CED009719D8C4E200690E65 /* main.m */,
+				6CED009819D8C4E200690E65 /* Sample-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B599FCB81656F5020092AFFD = {
+			isa = PBXGroup;
+			children = (
+				6CED008B19D8C4E200690E65 /* Gershwin */,
+				B599FCC61656F5020092AFFD /* Frameworks */,
+				B599FCC41656F5020092AFFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B599FCC41656F5020092AFFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B599FCC31656F5020092AFFD /* Gershwin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B599FCC61656F5020092AFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CED00AB19D8C5A500690E65 /* libLeap.dylib */,
+				6C0B46C119D74A9B00486E01 /* AudioUnit.framework */,
+				6C5D84AB19D73E9500E56502 /* CoreAudio.framework */,
+				6C5D84A919D73E5E00E56502 /* AudioToolbox.framework */,
+				6C5D84A719D73E4B00E56502 /* Accelerate.framework */,
+				B599FCC71656F5020092AFFD /* Cocoa.framework */,
+				B599FCC91656F5020092AFFD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B599FCC91656F5020092AFFD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B599FCCA1656F5020092AFFD /* AppKit.framework */,
+				B599FCCB1656F5020092AFFD /* CoreData.framework */,
+				B599FCCC1656F5020092AFFD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B599FCC21656F5020092AFFD /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599FCE11656F5020092AFFD /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				B599FCBF1656F5020092AFFD /* Sources */,
+				B599FCC01656F5020092AFFD /* Frameworks */,
+				B599FCC11656F5020092AFFD /* Resources */,
+				73BF4B1216F7B3CB00DE8B54 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = B599FCC31656F5020092AFFD /* Gershwin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B599FCBA1656F5020092AFFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Leap Motion";
+			};
+			buildConfigurationList = B599FCBD1656F5020092AFFD /* Build configuration list for PBXProject "Gershwin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B599FCB81656F5020092AFFD;
+			productRefGroup = B599FCC41656F5020092AFFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B599FCC21656F5020092AFFD /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B599FCC11656F5020092AFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED009D19D8C4E200690E65 /* Credits.rtf in Resources */,
+				6CED009E19D8C4E200690E65 /* InfoPlist.strings in Resources */,
+				6CED009F19D8C4E200690E65 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B599FCBF1656F5020092AFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED00A019D8C4E200690E65 /* Gershwin.m in Sources */,
+				6CED00A419D8C4E200690E65 /* ToneGenerator.m in Sources */,
+				6CED00A819D8C57900690E65 /* LeapObjectiveC.mm in Sources */,
+				6CED00A119D8C4E200690E65 /* main.m in Sources */,
+				6CED009C19D8C4E200690E65 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CED008E19D8C4E200690E65 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED008F19D8C4E200690E65 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6CED009019D8C4E200690E65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED009119D8C4E200690E65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CED009219D8C4E200690E65 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED009319D8C4E200690E65 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B599FCDF1656F5020092AFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		B599FCE01656F5020092AFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		B599FCE21656F5020092AFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gershwin/Gershwin-Prefix.pch";
+				INFOPLIST_FILE = "Gershwin/Sample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Gershwin\"",
+					"\"$(SRCROOT)/../lib\"",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-lleap";
+				PRODUCT_NAME = Gershwin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B599FCE31656F5020092AFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gershwin/Gershwin-Prefix.pch";
+				INFOPLIST_FILE = "Gershwin/Sample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Gershwin\"",
+					"\"$(SRCROOT)/../lib\"",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-lleap";
+				PRODUCT_NAME = Gershwin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B599FCBD1656F5020092AFFD /* Build configuration list for PBXProject "Gershwin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599FCDF1656F5020092AFFD /* Debug */,
+				B599FCE01656F5020092AFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B599FCE11656F5020092AFFD /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599FCE21656F5020092AFFD /* Debug */,
+				B599FCE31656F5020092AFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B599FCBA1656F5020092AFFD /* Project object */;
+}
